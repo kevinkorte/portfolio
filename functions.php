@@ -23,3 +23,5 @@ function get_this_projects_cover_img( $post_id) {
 	$cover = wp_get_attachment_image_src( $img_id, 'large', false );
 	return $cover[0];
 }
+
+add_theme_support( 'post-thumbnails' );

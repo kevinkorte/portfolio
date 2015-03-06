@@ -1,0 +1,12 @@
+.single-post-wrapper {
+  background: #fff;
+  box-shadow: 4px 4px 6px 6px rgba(0,0,0,0.3);
+  @extend .cf;
+}
+.single-img-wrapper {
+  float: left;
+  padding: 25px 0 25px 25px;
+}
+.single-post-meta {
+  float: left;
+}

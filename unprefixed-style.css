@@ -8,8 +8,9 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before, .main:before,
+.cf:before, .single-post-wrapper:before, .main:before,
 .cf:after,
+.single-post-wrapper:after,
 .main:after {
   content: " ";
   /* 1 */
@@ -17,7 +18,7 @@
   /* 2 */
 }
 
-.cf:after, .main:after {
+.cf:after, .single-post-wrapper:after, .main:after {
   clear: both;
 }
 
@@ -25,7 +26,7 @@
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf, .main {
+.cf, .single-post-wrapper, .main {
   *zoom: 1;
 }
 
@@ -59,6 +60,30 @@ body {
   border-top: 1px solid #f1f3f3;
   background: #fff;
   padding: 22px 14px;
+}
+
+.single-post-wrapper {
+  background: #fff;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.single-img-wrapper {
+  position: relative;
+  float: left;
+}
+
+.single-post-meta {
+  float: left;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  border: 2px solid red;
 }
 
 .main {
