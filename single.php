@@ -10,10 +10,11 @@
     <?php the_post_thumbnail('full', array('id'=>'single-image')); ?>
     <span class="highlight"></span>
   </div>
-  <div class="single-title">
+  <div class="single-meta">
     <h2 class="title"><?php the_title();?></h2>
+    <div class="single-content"><?php the_content();?></div>
+    <div class="single-cat"><?php the_category(); ?></div>
   </div>
-  <div class="single-post-meta"></div>
 </div>
 
 <?php endwhile; else : ?>

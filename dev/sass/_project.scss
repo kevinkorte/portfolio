@@ -21,11 +21,33 @@
     margin: auto;
   }
 }
-.single-title {
+.single-meta {
   background: #fff;
   flex-basis: 300px;
+  position: relative;
   .title {
       border-bottom: 1px solid darken(#f9fafa, 3%);
+      letter-spacing: 2px;
+  }
+  .single-content {
+    margin: 40px 22px;
+    color: #b6b6b6;
+  }
+  .single-cat {
+    //align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    .post-categories {
+      margin: 0;
+      padding-left: 22px;
+      padding-bottom: 12px;
+      li {
+        list-style: none;
+        a {
+          color: #b6b6b6;
+        }
+      }
+    }
   }
 }
 //side where wp tags go
