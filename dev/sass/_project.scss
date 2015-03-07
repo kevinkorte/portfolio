@@ -1,20 +1,32 @@
+.single .main {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 //wraps image and text
 .single .single-post-wrapper {
-  width: 600px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 //wraps only image
 .single-img-wrapper {
   position: relative;
-
+  background: black;
   //padding: 25px 0 25px 25px;
   img {
     width: 100%;
     height: auto;
+    display: block;
+    margin: auto;
   }
 }
 .single-title {
-
+  background: #fff;
+  flex-basis: 300px;
+  .title {
+      border-bottom: 1px solid darken(#f9fafa, 3%);
+  }
 }
 //side where wp tags go
 .single-post-meta {
@@ -28,5 +40,5 @@
   left: 0;
   right: 0;
   display: block;
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.4);
 }

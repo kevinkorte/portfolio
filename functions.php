@@ -37,8 +37,7 @@ function set_single_img_wrapper_size_h( $post_id ) {
 }
 function set_single_total_width( $post_id ) {
   $img_width = set_single_img_wrapper_size_w( $post_id );
-  $wrapper_width = $img_width * 4/3;
-  return $wrapper_width;
+  return $img_width;
 }
 
 add_theme_support( 'post-thumbnails' );
