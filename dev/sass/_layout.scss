@@ -1,11 +1,13 @@
-.main {
-  max-width: 336px;
-  margin: 0 auto;
-  @extend .cf;
-  @include breakpoint(two) {max-width: 672px};
-  @include breakpoint(three) {max-width: 1008px;};
-  @include breakpoint(four) {max-width: 1344px;}
-}
-.project-article {
-  float: left;
+body.home {
+  .main {
+    max-width: 336px;
+    margin: 0 auto;
+    @extend .cf;
+    @include breakpoint(two) {max-width: 672px};
+    @include breakpoint(three) {max-width: 1008px;};
+    @include breakpoint(four) {max-width: 1344px;}
+  }
+  .project-article {
+    float: left;
+  }
 }

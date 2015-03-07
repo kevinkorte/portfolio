@@ -23,5 +23,20 @@ function get_this_projects_cover_img( $post_id) {
 	$cover = wp_get_attachment_image_src( $img_id, 'large', false );
 	return $cover[0];
 }
+function set_single_img_wrapper_size_w( $post_id ) {
+  $img_id = get_post_thumbnail_id( $post_id );
+  $width = wp_get_attachment_image_src( $img_id, 'large', false );
+  return $width[1];
+}
+function set_single_img_wrapper_size_h( $post_id ) {
+  $img_id = get_post_thumbnail_id( $post_id );
+  $height = wp_get_attachment_image_src( $img_id, 'large', false );
+  return $height[2];
+}
+function set_single_total_width( $post_id ) {
+  $img_width = set_single_img_wrapper_size_w( $post_id );
+  $wrapper_width = $img_width + 400;
+  return $wrapper_width;
+}
 
 add_theme_support( 'post-thumbnails' );
