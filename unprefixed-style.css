@@ -406,9 +406,8 @@ th {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before, .single-post-wrapper:before, body.home .main:before,
+.cf:before, body.home .main:before,
 .cf:after,
-.single-post-wrapper:after,
 body.home .main:after {
   content: " ";
   /* 1 */
@@ -416,7 +415,7 @@ body.home .main:after {
   /* 2 */
 }
 
-.cf:after, .single-post-wrapper:after, body.home .main:after {
+.cf:after, body.home .main:after {
   clear: both;
 }
 
@@ -424,7 +423,7 @@ body.home .main:after {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf, .single-post-wrapper, body.home .main {
+.cf, body.home .main {
   *zoom: 1;
 }
 
@@ -460,14 +459,12 @@ body {
   padding: 22px 14px;
 }
 
-.single-post-wrapper {
+.single .single-post-wrapper {
+  width: 600px;
   margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .single-img-wrapper {
-  max-width: 900px;
   position: relative;
 }
 .single-img-wrapper img {

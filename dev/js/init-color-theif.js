@@ -6,7 +6,7 @@ $(window).ready(function(){
   var colorThief = new ColorThief();
   var color = colorThief.getColor(coverImg);
   console.log(color);
-   document.getElementById("single").style.backgroundColor = "rgb(" + color + ")";
+   //document.getElementById("single").style.backgroundColor = "rgb(" + color + ")";
 });
 
 //https://github.com/lokesh/color-thief/

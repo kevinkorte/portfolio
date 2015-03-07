@@ -1,13 +1,10 @@
 //wraps image and text
-.single-post-wrapper {
+.single .single-post-wrapper {
+  width: 600px;
   margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 0 6px 6px rgba(0,0,0,0.3);
-  @extend .cf;
 }
 //wraps only image
 .single-img-wrapper {
-  max-width: 900px;
   position: relative;
 
   //padding: 25px 0 25px 25px;
@@ -15,6 +12,9 @@
     width: 100%;
     height: auto;
   }
+}
+.single-title {
+
 }
 //side where wp tags go
 .single-post-meta {
